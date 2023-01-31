@@ -1,38 +1,61 @@
+.container {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  font-size: large;
+  font-family: "Arial Rounded MT Bold", cursive;
+}
+
+#adding-form {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20% 0 20%;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 80%;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#status-checkbox {
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+}
+
+#submit-button {
+  background-color: #3a75ff;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  font-family: "Arial Rounded MT Bold", cursive;
+}
+
+h1 {
+  text-align: center;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todo-container, .done-container{
+  width: 30%;
+  overflow: auto;
+  align-content: center;
+  margin-top: 2%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todo, .done {
+  margin-top: 5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo div, .done div{
+  margin: 10px;
 }
